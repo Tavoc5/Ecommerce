@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Osorio</title>
+    <link rel="stylesheet" href="../CSS/pagina.css">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+        <img src="../Recursos/Imagenes/natgeo.PNG" width="100" alt="">
+        </div>
+        <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li> 
+            <li><a href="../Paginas/Acerca de.html">Acerca de</a></li> 
+            <li><a href="../Paginas/Servicios.html">Servicios</a></li> 
+            <li><a href="../Paginas/Contacto.html">Contacto</a></li>
+            <li><a href="#">Calculadora sumas</a></li>
+        </ul>
+        </nav>
+        </header>
+    <button onclick ="pedirNumero()">Pedir numero</button>
+    <script>
+        function pedirNumero(){
+            var num1= 0; // Declaracion de variables  inicializadas con 0´s
+            var num2= 0;
+            num1 = prompt("Ingresar el primer numero");
+            num2 = prompt("Ingresar el primer numero");
+
+            var numero1 = parseFloat(num1);//Parseo de valores
+            var numero2 = parseFloat(num2);
+
+            var resultado = numero1+numero2;//Suma de valores
+            alert(resultado);
+        }
+    </script>
+</body>
+</html>
